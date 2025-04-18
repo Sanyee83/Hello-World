@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Változó háttérkép</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      transition: background-image 1s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+
+<script>
+  const backgrounds = [
+    'url("d:\Webprogramozas\Hello-World\ScootScale.jpg")',
+    'url("d:\Webprogramozas\Hello-World\ScottSpark.jpg")',
+    'url("d:\Webprogramozas\Hello-World\ScootGravel.jpg")',
+    'url("d:\Webprogramozas\Hello-World\ScottAddcict.jpg")'
+    'url("d:\Webprogramozas\Hello-World\E-bike.jpg")'
+  ];
+
+  let current = 0;
+
+  function changeBackground() {
+    document.body.style.backgroundImage = backgrounds[current];
+    current = (current + 1) % backgrounds.length;
+  }
+
+  // Indítás
+  changeBackground();
+  setInterval(changeBackground, 5000); // 5000ms = 5 másodperc
+</script>
+
+</body>
+</html>
