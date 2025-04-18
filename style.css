@@ -4,38 +4,46 @@
   <meta charset="UTF-8">
   <title>Változó háttérkép</title>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      background-size: cover;
-      background-position: center;
-      transition: background-image 1s ease-in-out;
-    }
+    /* Háttérkép váltáshoz szükséges stílusok */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+  }
+  
+  /* Egyéni navigációs menü szín */
+  .custom-navbar {
+    background-color: #4e4caf !important;
+  }
+  
+  /* Egyéb szükséges stílusok */
   </style>
 </head>
+.custom-navbar {
+    background-color: #4CAF50 !important; /* Zöldes árnyalat, módosítsd a kívánt színre */
+  }
 <body>
 
-<script>
-  const backgrounds = [
-    'url("d:\Webprogramozas\Hello-World\ScootScale.jpg")',
-    'url("d:\Webprogramozas\Hello-World\ScottSpark.jpg")',
-    'url("d:\Webprogramozas\Hello-World\ScootGravel.jpg")',
-    'url("d:\Webprogramozas\Hello-World\ScottAddcict.jpg")'
-    'url("d:\Webprogramozas\Hello-World\E-bike.jpg")'
-  ];
-
-  let current = 0;
-
-  function changeBackground() {
-    document.body.style.backgroundImage = backgrounds[current];
-    current = (current + 1) % backgrounds.length;
-  }
-
-  // Indítás
-  changeBackground();
-  setInterval(changeBackground, 5000); // 5000ms = 5 másodperc
-</script>
+    <script>
+        const images = [
+        'ScottScale.jpg',
+        'ScottSpark.jpg',
+        'ScottAddict.jpg'
+        ];
+    
+        let currentIndex = 0;
+    
+        function changeBackground() {
+        document.body.style.backgroundImage = `url(${images[currentIndex]})`;
+        currentIndex = (currentIndex + 1) % images.length;
+        }
+    
+        setInterval(changeBackground, 5000); // 5 másodpercenként vált
+        changeBackground(); // Első háttérkép beállítása
+    </script>
 
 </body>
 </html>
