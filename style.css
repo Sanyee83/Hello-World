@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="hu">
-<head>
-  <meta charset="UTF-8">
-  <title>Változó háttérkép</title>
-  <style>
-    /* Háttérkép váltáshoz szükséges stílusok */
+/* Háttérkép váltáshoz szükséges stílusok */
 body {
     margin: 0;
     padding: 0;
@@ -16,34 +10,16 @@ body {
   
   /* Egyéni navigációs menü szín */
   .custom-navbar {
-    background-color: #4e4caf !important;
+    background-color: #18a890 !important; /* Zöldes árnyalat */
+  }
+  
+  /* Footer stílus */
+  footer {
+    background-color: #18a890 !important;
+    color: #fff !important;
+    text-align: center;
+    padding: 1rem 0;
   }
   
   /* Egyéb szükséges stílusok */
-  </style>
-</head>
-.custom-navbar {
-    background-color: #4CAF50 !important; /* Zöldes árnyalat, módosítsd a kívánt színre */
-  }
-<body>
-
-    <script>
-        const images = [
-        'ScottScale.jpg',
-        'ScottSpark.jpg',
-        'ScottAddict.jpg'
-        ];
-    
-        let currentIndex = 0;
-    
-        function changeBackground() {
-        document.body.style.backgroundImage = `url(${images[currentIndex]})`;
-        currentIndex = (currentIndex + 1) % images.length;
-        }
-    
-        setInterval(changeBackground, 5000); // 5 másodpercenként vált
-        changeBackground(); // Első háttérkép beállítása
-    </script>
-
-</body>
-</html>
+  /* Ide adhatsz meg további CSS szabályokat */
