@@ -45,4 +45,12 @@ body {
 .back-to-top:hover {
   background-color: #0f7a63; /* Sötétebb zöld árnyalat hover állapotban */
 }
- 
+/* style.css */
+.back-to-top {
+  display: none;
+  /* egyéb stílusok... */
+}
+
+.back-to-top.shown {
+  display: block;
+}
