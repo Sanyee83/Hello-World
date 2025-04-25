@@ -1,1 +1,152 @@
-Fejlesztés alatt...
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-bike</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-bike</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background: #f8f9fa; /* világos, semleges háttér */
+        color: #333;  /* sötétebb szöveg, jól látható a világos háttéren */
+      }
+    </style>
+  </head>
+<body>
+  <!-- Navigációs menü hozzáadása -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">BikeWorld</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Kerékpártípusok
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="road.html">Road</a></li>
+                <li><a class="dropdown-item" href="mtb.html">Mountain Bike</a></li>
+                <li><a class="dropdown-item" href="mtbfully.html">Fully Mountain Bike</a></li>
+                <li><a class="dropdown-item" href="gravel.html">Gravel kerékpár</a></li>
+                <li><a class="dropdown-item" href="hybrid.html">E-bike</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="turautvonalak.html">Túraútvonalak</a></li>
+            <li class="nav-item"><a class="nav-link" href="arlista.html">Árlista</a></li>
+            <li class="nav-item"><a class="nav-link" href="versenyek.html">Versenyek</a></li>
+            <li class="nav-item"><a class="nav-link" href="kapcsolat.html">Kapcsolat</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <p class="text-center">
+    <img src="images/E-bike.jpg" alt="Scott Gravel MTB" class="img-fluid">
+  </p>
+  <main class="container my-4">
+    <article>
+      <h1>E-bike</h1>
+      <p>
+        Az e-bike, vagy elektromos kerékpár napjaink egyik leggyorsabban fejlődő kerékpártípusa, 
+        amely egyesíti a hagyományos pedálozás élményét az elektromos rásegítés kényelmével. 
+        Ideális választás lehet városi közlekedéshez, 
+        túrázáshoz vagy akár komolyabb terepre is, típustól függően.
+         A motoros rásegítésnek köszönhetően nagyobb távolságok is könnyebben teljesíthetők, 
+         különösen emelkedőkön vagy erősebb ellenszélben.     
+        </p>
+      <h2>Fő jellemzők</h2>
+      <ul>
+        <li>
+          <strong>Motor és akkumulátor:</strong>  Az e-bike lelke a beépített villanymotor, 
+          amely lehet első, hátsó vagy középmotoros elrendezésű – utóbbi a legelterjedtebb a jobb súlyelosztás miatt.
+           A motor teljesítménye általában 250 W, ami megfelel az európai szabályozásnak. 
+           Az akkumulátor a vázban vagy annak tetején/mellett kap helyet, 
+           és kapacitása jellemzően 400–750 Wh között mozog. Egy töltéssel 40–120 km-es hatótáv is elérhető, 
+          a terepviszonyoktól és a rásegítés szintjétől függően.
+       </li>
+       <p class="text-center">
+        <img src="images/Motor.jpg" alt="GRX fek" class="img-fluid">
+        <img src="images/Battery.jpg" alt="GRX fek" class="img-fluid">
+       </p>
+        <li>
+          <strong>Teleszkóp:</strong> A rugóút típustól függően változik. A városi e-bike-ok általában 
+          első teleszkóppal rendelkeznek 50–80 mm rugóúttal, 
+          míg a terepre szánt e-MTB-k akár 120–160 mm rugóúttal is elérhetők, elöl és hátul egyaránt.
+        </li>
+
+        <li>
+            <strong>Fék:</strong> Az e-bike-okhoz a nagyobb sebesség és tömeg miatt erősebb fékrendszer szükséges. 
+            A hidraulikus tárcsafékek az alapfelszereltség részét képezik, 
+            és megbízható, stabil fékezést nyújtanak bármilyen körülmények között.
+          </li>
+          <p class="text-center">
+            <img src="images/XTBrake.jpg" alt="XT" class="img-fluid">
+            </p>  
+        
+        <li>
+          <strong>Vázanyag:</strong>  Mivel az e-bike-oknál az akkumulátor és a motor plusz súlyt jelent, 
+          a váz kialakítása masszívabb, de a modern technológiának köszönhetően nem túl nehéz.
+           A leggyakoribb anyag az alumínium, de prémium modelleknél a karbonváz sem ritka. 
+           A vázgeometria a stabilitásra és kényelemre van optimalizálva.
+        </li>
+        <p class="text-center">
+        <img src="images/E-bikeFrame.jpg" alt="E-Frame" class="img-fluid">
+        </p>    
+        <li>
+          <strong>Kormány:</strong> A kormány típusa az e-bike felhasználási területéhez igazodik. 
+          Városi modelleknél jellemző a magas, ívelt kormány a kényelmes testtartás érdekében, 
+          míg a sportosabb, trekking vagy e-MTB modellek egyenes, 
+          szélesebb kormánnyal rendelkeznek a jobb irányíthatóságért. 
+          A kormányon található kijelzőn látható az akkumulátor töltöttsége, 
+          a rásegítés szintje és sok esetben a sebesség is.
+        </li>
+        <p class="text-center">
+        <img src="images/Syncross.jpg" alt="GBar" class="img-fluid">
+        </p>
+        
+        <li>
+            <strong>Váltás</strong>A teljes felfüggesztésű MTB-k is főleg 1x rendszerrel dolgoznak, 
+            gyakran 12 sebességes hátsó váltóval, ami kiválóan alkalmas technikás, változatos terepre. 
+            A váltókar finoman reagál, a váltás gyors és pontos, még saras környezetben is. 
+            Ezek általában már elektromos váltók, amiket akkumulátor működtet. 
+            Sárban és télen nagy előnyük van bowdenes váltókkal szemben. Nem állítódnak el, cserébe drágábbak.
+
+        </li>
+        
+        <p class="text-center">
+        <img src="images/XT.jpg" alt="Gravel" class="img-fluid">
+        </p>
+       
+        <li>
+            <strong>Dropper:</strong> A dropper nyeregcső az e-MTB kategóriában kezd elterjedni, 
+            mivel technikásabb terepeken nagy segítséget jelent. Lehetővé teszi, 
+            hogy a nyereg egy gombnyomással leengedhető legyen, 
+            így lejtőn vagy akadályos útszakaszon stabilabb pozícióban maradhat a bringás.
+        </li>
+        
+        <p class="text-center">
+        <img src="images/Dropper.jpg" alt="Dropper" class="img-fluid">
+        </p>
+      </ul>
+      
+    </article>
+  </main>
+  <footer>
+    &copy; 2025 BikeWorld – Minden jog fenntartva. Reznik Sándor-HH8BTU
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
