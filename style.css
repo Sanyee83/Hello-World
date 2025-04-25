@@ -1,12 +1,12 @@
 /* Háttérkép váltáshoz szükséges stílusok */
+
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    transition: background-image 1s ease-in-out;
-  }
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #4f61b6; /* Világoskék árnyalat */
+  color: #3a3434; /* Sötétebb szöveg a világos háttérhez */
+}
   
   /* Egyéni navigációs menü szín */
   .custom-navbar {
@@ -25,5 +25,24 @@ body {
     border: 1px solid #ccc; /* Szürke szegély */
     z-index: 1000; /* Biztosítsd, hogy a menü a többi elem fölött jelenjen meg */
 }
-  /* Egyéb szükséges stílusok */
-  /* Ide adhatsz meg további CSS szabályokat */
+/* Vissza a tetejére gomb stílus */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none; /* Alapértelmezés szerint rejtve */
+  background-color: #18a890; /* Zöldes árnyalat */
+  color: #fff;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.back-to-top:hover {
+  background-color: #0f7a63; /* Sötétebb zöld árnyalat hover állapotban */
+}
+ 
