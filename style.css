@@ -20,6 +20,10 @@ body {
     text-align: center;
     padding: 1rem 0;
   }
-  
+  .dropdown-menu {
+    background-color: #fff; /* Fehér háttér */
+    border: 1px solid #ccc; /* Szürke szegély */
+    z-index: 1000; /* Biztosítsd, hogy a menü a többi elem fölött jelenjen meg */
+}
   /* Egyéb szükséges stílusok */
   /* Ide adhatsz meg további CSS szabályokat */
