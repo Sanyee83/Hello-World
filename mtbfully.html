@@ -97,6 +97,29 @@
   <footer>
     &copy; 2025 BikeWorld – Minden jog fenntartva. Reznik Sándor-HH8BTU
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <a href="#" class="back-to-top" id="scrollTopArrow" title="Vissza a tetejére">&#8679;</a>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // A gomb megjelenítése, ha a felhasználó 200px-nél lejjebb görget
+  $(window).scroll(function(){
+      if ($(window).scrollTop() > 200) {
+          $('#scrollTopArrow').addClass('shown');
+      } else {
+          $('#scrollTopArrow').removeClass('shown');
+      }
+  });
+  // Kattintásra az oldal tetejére ugrik
+  $(document).ready(function(){
+      $('#scrollTopArrow').click(function(e) {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          return false;
+      });
+  });
+</script>
 </body>
 </html>
